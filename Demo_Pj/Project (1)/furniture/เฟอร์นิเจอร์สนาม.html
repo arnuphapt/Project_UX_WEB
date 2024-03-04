@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Furniture</title>
+</head>
+
+<body>
+
+    <!-- Top nav -->
+    <nav class="top-nav top-50 start-50">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between;">
+                <a href="./index.html">
+                    <p style="margin: 0;">BUILDEN</p>
+                </a>
+                <div>
+                    <a href="#" style="margin-right: 10px;"><i class='bx bx-user' style='color:#fefafa'></i>
+                        สมัครสมาชิค</a>
+                    <a href="#"><i class='bx bx-log-in'></i> เข้าสู่ระบบ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Top nav -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg">
+        <div class="container">
+            <a href="./index.html" class="navbar-brand fs-3 ms-3"><img src="./logo/โปร่ง2.png" alt="" class=""
+                    style="width: 80px;"></a>
+
+            <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#btn">
+                <i class='bx bx-menu bx-md'></i>
+            </button>
+
+            <div class="collaps navbar-collapse" id="btn">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link mx-3 text-white fs-5">หน้าหลัก</a>
+                    </li>
+                    <!-- multi dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mx-3 text-white fs-5" href="#" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">เฟอร์นิเจอร์</a>
+
+                        <!-- 2 level -->
+                        <ul class="dropdown-menu shadow">
+                            <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle"
+                                    data-bs-toggle="dropdown">เฟอร์นิเจอร์สนาม</a>
+                                <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item" href=""> ชุดสนาม</a></li>
+                                    <li><a class="dropdown-item" href=""> ชิงช้าสนาม</a></li>
+                                    <li><a class="dropdown-item" href=""> โต๊ะ/เก้าอี้</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside">เฟอร์นิเจอร์ห้องนั่งเล่น</a>
+                                <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item" href=""> โซฟา</a></li>
+                                    <li><a class="dropdown-item" href=""> เก้าอี้</a></li>
+                                    <li><a class="dropdown-item" href=""> ตู้วางทีวี/ชั้นวางทีวี</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside">เฟอร์นิเจอร์สำนักงาน</a>
+                                <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item" href=""> ตู้นิรภัย</a></li>
+                                    <li><a class="dropdown-item" href=""> ตู้เอกสาร</a></li>
+                                    <li><a class="dropdown-item" href=""> อุปกรณ์สำนักงาน</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside">เฟอร์นิเจอร์ห้องนอน</a>
+                                <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item" href=""> โต๊ะเครื่องเเป้ง</a></li>
+                                    <li><a class="dropdown-item" href=""> เตียงนอน</a></li>
+                                    <li><a class="dropdown-item" href=""> ตู้เสื้อผ้า</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside">เฟอร์นิเจอร์ห้องครัว</a>
+                                <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item" href=""> ชุดโต๊ะอาหาร</a></li>
+                                    <li><a class="dropdown-item" href=""> ตู้ตั้งพื้น</a></li>
+                                    <li><a class="dropdown-item" href=""> เก้าอี้ทานข้าว</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropend">
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside">เฟอร์นิเจอร์ในบ้าน</a>
+                                <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item" href=""> ชั้นวางของ/ตู้ลิ้นชัก</a></li>
+                                    <li><a class="dropdown-item" href=""> ฉากกั้น</a></li>
+                                    <li><a class="dropdown-item" href=""> ตู้</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <!-- 2 level -->
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link mx-3 text-white fs-5">เกี่ยวกับเรา</a>
+                    </li>
+                    <!-- dropdown -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link mx-3 text-white fs-5" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">บริการ</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class='bx bxs-wrench'></i> ซ่อมบำรุงถึงบ้าน</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class='bx bx-cog'></i> ติดตั้งอุปกรณ์</a></li>
+                        </ul>
+                    </li>
+                    <!-- End dropdown -->
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link mx-3 text-white fs-5" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">ติดต่อเรา</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./branches.html"><i class='bx bxs-factory'></i>
+                                    สาขาทั้งหมด</a></li>
+                            <li><a class="dropdown-item" href="./contac.html"><i class='bx bx-phone-call'></i>
+                                    ช่องทางการติดต่อ</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item basket">
+                        <div class="position-relative" style="width: 50px;">
+                            <a href="./basket.html"><i class='bx bx-basket bx-lg' style='color:#fefafa'></i></a><span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-black"
+                                style="font-size: 15px;">3</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End navbar -->
+
+    <!-- furniture -->
+    <section class="container">
+        <h1 class="text-center mt-5">เฟอร์นิเจอร์สนามเทาๆๆๆๆ</h1>
+        <h3 class="mt-3" id="1">ชุดสนาม</h3>
+        <hr>
+
+        <div class="row">
+
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 20rem; margin-left: auto;
+        margin-right: auto;margin-top: 1%;">
+                <img src="./IMG/ชุด1.jpg" class="card-img-top" alt="่jpg">
+                <div class="card-body">
+                    <h5 class="card-title">ชุดโต๊ะเก้าอี้ปิกนิก</h5>
+                    <p class="card-text">SUMMER SET ชุดโต๊ะเก้าอี้ปิกนิก TAVA (โต๊ะ 90x60x70ซม. เก้าอี้ 87x24x39.5ซม.)
+                    </p>
+                    <h5 class="card-text" style="color:#b42026 ;">฿ 1,590.- / ชุด</h5>
+                    <p class="card-text" style="text-decoration:line-through;">฿1,690</p>
+                    <a href="" style="color: #f58b0d;">รายละเอียดเพิ่มเติม</a>
+                </div>
+            </div>
+
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 20rem;margin-left: auto;
+        margin-right: auto;margin-top: 1%;">
+                <img src="./IMG/ชุด2.jpg" class="card-img-top" alt="่jpg">
+                <div class="card-body">
+                    <h5 class="card-title">ชุดโต๊ะสนาม</h5>
+                    <p class="card-text">SUMMER SET ชุดโต๊ะสนาม 2 ที่นั่ง รุ่น BAIKO โต๊ะ : 53x60x81 ซม. เก้าอี้ :
+                        60x60x71 ซม. สีดำ</p>
+                    <h5 class="card-text" style="color:#b42026 ;">฿1,190 / ชุด</h5>
+                    <p class="card-text" style="text-decoration:line-through;"></p>
+                    <a href="" style="color: #f58b0d;">รายละเอียดเพิ่มเติม</a>
+                </div>
+            </div>
+
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 20rem;margin-left: auto;
+        margin-right: auto;margin-top: 1%;">
+                <img src="./IMG/ชุด3.jpg" class="card-img-top" alt="่jpg">
+                <div class="card-body">
+                    <h5 class="card-title">ชุดโต๊ะสนาม2</h5>
+                    <p class="card-text">ชุดโต๊ะสนาม รุ่น ZRJ004-N ขนาด 60x60x70 ซม.</p>
+                    <h5 class="card-text" style="color:#b42026 ;">฿1,690 / ชุด</h5>
+                    <p class="card-text" style="text-decoration:line-through;"></p>
+                    <a href="" style="color: #f58b0d;">รายละเอียดเพิ่มเติม</a>
+                </div>
+            </div>
+
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 20rem;margin-left: auto;
+        margin-right: auto;margin-top: 1%;">
+                <img src="./IMG/ชุด4.jpg" class="card-img-top" alt="่jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Summer Set ชุดโต๊ะพลาสติก</h5>
+                    <p class="card-text">Summer Set ชุดโต๊ะพลาสติก รุ่น HXC-873-2 ขนาด 50.5x50.5x45.5ซม. สีเขียวอ่อน
+                    </p>
+                    <h5 class="card-text" style="color:#b42026 ;">฿2,290 / ชุด</h5>
+                    <p class="card-text" style="text-decoration:line-through;"></p>
+                    <a href="" style="color: #f58b0d;">รายละเอียดเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="mt-3" id="1">ชิงช้าสนาม</h3>
+        <hr>
+
+        <div class="row">
+
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 20rem;margin-left: auto;
+        margin-right: auto;margin-top: 1%;">
+                <img src="./IMG/ชิง1.jpg" class="card-img-top" alt="่jpg">
+                <div class="card-body">
+                    <h5 class="card-title">ชิงช้ารังนก</h5>
+                    <p class="card-text">SUMMER SET ชิงช้ารังนก รุ่น BENBEN ขนาด 68×107×115 ซม. สีดำ</p>
+                    <h5 class="card-text" style="color:#b42026 ;">฿3,590 / ชิ้น</h5>
+                    <p class="card-text" style="text-decoration:line-through;"></p>
+                    <a href="" style="color: #f58b0d;">รายละเอียดเพิ่มเติม</a>
+                </div>
+            </div>
+
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 20rem;margin-left: auto;
+        margin-right: auto;margin-top: 1%;">
+                <img src="./IMG/ชิง2.jpg" class="card-img-top" alt="่jpg">
+                <div class="card-body">
+                    <h5 class="card-title">ชิงช้าสนาม 2 ที่นั่ง</h5>
+                    <p class="card-text">SUMMER SET ชิงช้าสนาม 2 ที่นั่ง รุ่น GARY ขนาด 140x117x153 ซม. สีเขียว</p>
+                    <h5 class="card-text" style="color:#b42026 ;">฿3,690 / ตัว</h5>
+                    <p class="card-text" style="text-decoration:line-through;"></p>
+                    <a href="" style="color: #f58b0d;">รายละเอียดเพิ่มเติม</a>
+                </div>
+            </div>
+
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 20rem;margin-left: auto;
+        margin-right: auto;margin-top: 1%;">
+                <img src="./IMG/ชิง3.jpg" class="card-img-top" alt="่jpg">
+                <div class="card-body">
+                    <h5 class="card-title">ชิงช้ารังนกสีแดง</h5>
+                    <p class="card-text">ชิงช้ารังนกสีแดง KLS-E052</p>
+                    <h5 class="card-text" style="color:#b42026 ;">฿3,990 / ชุด</h5>
+                    <p class="card-text" style="text-decoration:line-through;"></p>
+                    <a href="" style="color: #f58b0d;">รายละเอียดเพิ่มเติม</a>
+                </div>
+            </div>
+
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 20rem;margin-left: auto;
+        margin-right: auto;margin-top: 1%;">
+                <img src="./IMG/ชิง4.jpg" class="card-img-top" alt="่jpg">
+                <div class="card-body">
+                    <h5 class="card-title">ชิงช้าสนาม 3 ที่นั่ง</h5>
+                    <p class="card-text">SUMMER SET ชิงช้าสนาม 3 ที่นั่ง รุ่น HWT003S ขนาด117x170x153ซม. สีเบจ</p>
+                    <h5 class="card-text" style="color:#b42026 ;">฿4,290 / ชุด</h5>
+                    <p class="card-text" style="text-decoration:line-through;"></p>
+                    <a href="" style="color: #f58b0d;">รายละเอียดเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="mt-3" id="1">โต๊ะเก้าอี้</h3>
+        <hr>
+
+        <div class="row">
+
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 20rem;margin-left: auto;
+        margin-right: auto;margin-top: 1%;">
+                <img src="./IMG/เก้า1.jpg" class="card-img-top" alt="่jpg">
+                <div class="card-body">
+                    <h5 class="card-title">เก้าอี้สนาม</h5>
+                    <p class="card-text">SUMMER SET เก้าอี้สนาม ขนาด 57x48x80ซม. รุ่น SNOWMAN สีขาว</p>
+                    <h5 class="card-text" style="color:#b42026 ;">฿790 / ตัว</h5>
+                    <p class="card-text" style="text-decoration:line-through;">฿990</p>
+                    <a href="" style="color: #f58b0d;">รายละเอียดเพิ่มเติม</a>
+                </div>
+            </div>
+
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 20rem;margin-left: auto;
+        margin-right: auto;margin-top: 1%;">
+                <img src="./IMG/เก้า2.jpg" class="card-img-top" alt="่jpg">
+                <div class="card-body">
+                    <h5 class="card-title">ม้านั่งสนาม</h5>
+                    <p class="card-text">SUMMER SET ม้านั่งสนาม ขนาด 50x120x80 ซม. รุ่น LINEO สีดำ</p>
+                    <h5 class="card-text" style="color:#b42026 ;">฿3,190 / ตัว</h5>
+                    <p class="card-text" style="text-decoration:line-through;">฿3,590</p>
+                    <a href="" style="color: #f58b0d;">รายละเอียดเพิ่มเติม</a>
+                </div>
+            </div>
+
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 20rem;margin-left: auto;
+        margin-right: auto;margin-top: 1%;">
+                <img src="./IMG/เก้า3.jpg" class="card-img-top" alt="่jpg">
+                <div class="card-body">
+                    <h5 class="card-title">เก้าอี้สเตนเลสกลม</h5>
+                    <p class="card-text">Sane เก้าอี้สเตนเลสกลม กว้าง 29ซม. สูง 47ซม. สีเหลือง</p>
+                    <h5 class="card-text" style="color:#b42026 ;">฿168 / ตัว</h5>
+                    <p class="card-text" style="text-decoration:line-through;"></p>
+                    <a href="" style="color: #f58b0d;">รายละเอียดเพิ่มเติม</a>
+                </div>
+            </div>
+
+            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 20rem;margin-left: auto;
+        margin-right: auto;margin-top: 1%;">
+                <img src="./IMG/เก้า4.jpg" class="card-img-top" alt="่jpg">
+                <div class="card-body">
+                    <h5 class="card-title">ก้าอี้เหล็ก</h5>
+                    <p class="card-text">Delicato เก้าอี้เหล็ก LEMON WHITE ขนาด 30x30x44.5 ซม. สีขาว</p>
+                    <h5 class="card-text" style="color:#b42026 ;">฿199 / ตัว</h5>
+                    <p class="card-text" style="text-decoration:line-through;"></p>
+                    <a href="" style="color: #f58b0d;">รายละเอียดเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End furniture -->
+
+    <!-- head footer -->
+    <section class="header-footer p-4">
+        <div class="container">
+
+            <div class="row gy-3 my-3">
+
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <img src="./logo/โปร่ง2.png" alt="logo" style="height: 200px;">
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <form>
+                        <div class="mb-3">
+                            <h3 style="color: white;">ติดตามข่าวสาร</h3>
+                            <label for="exampleInputEmail1" class="form-label" style="color: #ffa600;">Email
+                                address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text" style="color: #d9571e;">We'll never share your email
+                                with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label" style="color: #ffa600;">Phone</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-warning">Submit</button>
+                    </form>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <h3 style="color: white;">ตำเเหน่งบริษัท</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.981586082729!2d102.821469462078!3d16.475689574448587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228b1daee27277%3A0x4d95131862f3456e!2z4Lit4Liy4LiE4Liy4Lij4Lin4Li04LiX4Lii4Lin4Li04Lig4Liy4LiqIChTQzA5KQ!5e1!3m2!1sth!2sth!4v1665084246088!5m2!1sth!2sth"
+                        width="100%" height="90%" style="border:0; border-radius: 10px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End head footer -->
+
+    <!-- footer -->
+    <footer class="text-center">
+        <h5 style="color: #424242; font-size: 16px;">Privacy Policy | Terms of Service | 123 หมู่ 16 ถ.มิตรภาพ ต.ในเมือง
+            อ.เมือง จ.ขอนแก่น 40002</h5>
+        <p style="margin: 0; color: #6b6b6b;">Copyright © 2021 Ratta-phoom System Co., Ltd.</p>
+    </footer>
+    <!-- End footer -->
+
+    <link rel="stylesheet" href="./script.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
