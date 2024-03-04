@@ -1,82 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Link</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-        }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .container h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .container label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .container input[type="text"], .container textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 3px;
-        }
-        .container input[type="submit"] {
-            background-color: #007bff;
-            color: #fff;
-            cursor: pointer;
-        }
-        .container input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-        .container .output {
-            margin-top: 20px;
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 3px;
-        }
-    </style>
+	<title>Welcome Page</title>
+	<style>
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			font-size: 3rem;
+			margin-bottom: 1rem;
+		}
+		button {
+			padding: 0.5rem 1rem;
+			font-size: 1.2rem;
+			border-radius: 5px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Upload Link</h1>
-        <form id="link-form">
-            <label for="url">Enter URL:</label>
-            <input type="text" id="url" name="url" required>
-            <label for="description">Description (optional):</label>
-            <textarea id="description" name="description"></textarea>
-            <input type="submit" value="Upload">
-        </form>
-        <div class="output"></div>
-    </div>
-
-    <script>
-        const form = document.getElementById('link-form');
-        const output = document.querySelector('.output');
-
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            const url = document.getElementById('url').value;
-            const description = document.getElementById('description').value;
-
-            output.innerHTML = `<a href="${url}" target="_blank">${url}</a>`;
-
-            if (description) {
-                output.innerHTML += `<p>${description}</p>`;
-            }
-        });
-    </script>
+	<h1>Welcome</h1>
+	<button>Go to Website</button>
 </body>
 </html>
