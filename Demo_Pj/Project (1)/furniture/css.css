@@ -30,11 +30,11 @@ body::-webkit-scrollbar-thumb {
 
 /* navbar */
 .bg {
-    background-color: #b42026;
+    background-color: #121217;
 }
 
 li.nav-item:hover {
-    background-color: #851a1e;
+    background-color: #81a1c1;
     border-radius: 10px;
 }
 
